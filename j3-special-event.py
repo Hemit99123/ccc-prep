@@ -1,3 +1,13 @@
+"""
+Key learnings:
+
+2 python operators that can help with problem solving.
+
+max() attribute which finds the maximum element in a given range of values (list) 
+
+rstrip() which is used for formatting of text (string) values in python. part of the strip() functions which remove different parts of the text. rstrip removes the right most attributes (the end)
+"""
+
 def Solution():
     n = int(input())
     h = {}
