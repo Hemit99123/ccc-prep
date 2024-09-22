@@ -1,3 +1,10 @@
+# Hemit Patel
+# STUDENT NAME
+# ICS3U0-1 (Course code)
+# J1 Solution
+# TEACHER NAME
+# 21 sep 2024
+
 R = int(input(""))
 S = int(input(""))
 
