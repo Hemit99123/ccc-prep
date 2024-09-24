@@ -5,9 +5,9 @@
 # TEACHER NAME
 # 21 sep 2024
 
-R = int(input(""))
-S = int(input(""))
+regular_cupcakes = int(input(""))
+small_cupcakes = int(input(""))
 
-total_cupcake = R * 8 + S * 3
+total_cupcake = regular_cupcakes * 8 + small_cupcakes * 3
 
 print(total_cupcake - 28)
