@@ -1,8 +1,8 @@
 # Hemit Patel
-# 781159
+# STUDENT NUMBER
 # ICS3U0-1
 # J2 2020 Waterloo Solution
-# Mr Veera
+# INSTRUCTOR NAME
 # 24 sep 2024
 
 people_infected_target = int(input());
@@ -12,19 +12,23 @@ people_infected_day0 = int(input());
 people_infected_rate = int(input());
 
 
-days = 1
+days = 0
 prev_day_infected = people_infected_day0
 total_infected = people_infected_day0
 
 while True:
-    people_infected_on_day = prev_day_infected * people_infected_rate
-    total_infected += people_infected_on_day
-    
+
     if total_infected > people_infected_target:
         break;
     
+    people_infected_on_day = prev_day_infected * people_infected_rate
+    
+    total_infected += people_infected_on_day
+        
     days += 1
     prev_day_infected = people_infected_on_day
+
+    
 
 
 print(days)
