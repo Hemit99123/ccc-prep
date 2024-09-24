@@ -13,20 +13,20 @@ prev = ""
 
 while True:
     
-    N = input("");
+    number = input("");
 
     # This signals the end of the input so break out for the while loop
     
-    if N == "99999":
+    if number == "99999":
         break;
 
     # Convert to the list so we can take on this problem number by number based on indexes (0-4)
     
-    N = list(N);
+    number = list(N);
 
     # We are employing this logic here where the 0 index is the first number and the 1 index is the second number
     
-    S = int(N[0]) + int(N[1]);
+    sum_first_2 = int(N[0]) + int(N[1]);
     direction = "";
     
         
@@ -34,10 +34,10 @@ while True:
     # Using this odd/even state to determine the direction we go too
     # If the sum is 0 then use the previous direction (the else statement)
 
-    if S % 2 == 1:
+    if sum_first_2 % 2 == 1:
         direction = "left";
 
-    elif S % 2 != 1 and S != 0:
+    elif sum_first_2 % 2 != 1 and S != 0:
         direction = "right";
 
     else:
