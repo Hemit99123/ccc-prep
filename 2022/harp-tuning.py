@@ -1,3 +1,10 @@
+# Hemit Patel
+# STUDENT NUMBER
+# ICS3UO-1
+# Harp Tuning Convertor
+# INSTRUCTOR NAME
+# 26 sep 2024
+
 tuning_instruction = input("")
 
 # Convert the tuning instruction into a list of characters
