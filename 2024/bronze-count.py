@@ -18,9 +18,10 @@ for _ in range(total_participants):
 sorted_list = sorted(set(list_scores), reverse=True)
 
 bronze_winners = 0
+bronze_score = sorted_list[2]
 
 for i in list_scores: 
-  if i == sorted_list[2]: 
+  if i == bronze_score: 
     bronze_winners += 1 
 
-print(sorted_list[2], bronze_winners)
+print(bronze_score, bronze_winners)
