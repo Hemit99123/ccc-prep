@@ -16,6 +16,7 @@ for _ in range(number_lines):
 
     But if I were to use , in the paramaters then it would split everytime , was used so I, hemit would become ["I", "hemit"] 
     '''
+    
     coded_message = coded_message.split()
 
     decoded_message = int(coded_message[0]) * coded_message[1]
