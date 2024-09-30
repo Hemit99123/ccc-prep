@@ -10,6 +10,12 @@ message_list = []
 
 for _ in range(number_lines):
     coded_message = input("");
+
+    '''
+    Learned the .split() function which splits a text into a list based on a specific character in the paramaters. If left empty, it will split the characters based on an empty space given
+
+    But if I were to use , in the paramaters then it would split everytime , was used so I, hemit would become ["I", "hemit"] 
+    '''
     coded_message = coded_message.split()
 
     decoded_message = int(coded_message[0]) * coded_message[1]
