@@ -1,8 +1,8 @@
 # Hemit Patel
-# 781159
+# STUDENT NUMBER
 # ICS3U0-4 (reorged)
 # Boiling point
-# Mr Veera
+# INSTRUCTOR NAME
 # 3 oct 2024
 
 # The input for the program
