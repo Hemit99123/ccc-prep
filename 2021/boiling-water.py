@@ -1,19 +1,25 @@
 # Hemit Patel
-# STUDENT NAME
-# ICS3U0-1 (Course code)
-# J1 2021 Solution
-# INSTRUCTOR NAME
-# 22 sep 2024
+# 781159
+# ICS3U0-4 (reorged)
+# Boiling point
+# Mr Veera
+# 3 oct 2024
 
-B = int(input(""));
+# The input for the program
+temperature = int(input("Enter the temperature in celsius: "))
 
-P = 5 * B - 400
+# Outputs for the programs
+pressure = 5 * temperature - 400
+sea_level = 0
 
-print(P)
 
-if P < 100:
-    print(1)
-elif P > 100:
-    print(-1)
-else:
-    print(0)
+# Changing the sea level based on different conditions (employing conditional logic)
+if pressure < 100:
+    sea_level = 1
+elif pressure == 100:
+    sea_level = 0
+elif pressure > 100:
+    sea_level = -1
+
+
+print(f"The sea level is {sea_level} and the pressure is {pressure}.")
