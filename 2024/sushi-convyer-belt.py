@@ -1,8 +1,8 @@
 # Hemit Patel
-# 781159
+# STUDENT NUMBER
 # ICS3U0-4 (reorged)
 # Sushi cost calculator
-# Mr Veera
+# INSTRUCTOR NAME
 # 3 oct 2024
 
 # The inputs for the program which are the different colored plates
