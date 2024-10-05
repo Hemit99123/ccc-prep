@@ -5,20 +5,15 @@
 # INSTRUCTOR NAME
 # 22 sep 2024
 
-N = int(input(""));
-bid = 0
-winner = 0
+amount_bidders = int(input())
+max = 0
+winner = ""
 
-for _ in range(N):
-    name = input("");
-    amount = int(input(""));
-
-    if amount > bid:
-        bid = amount
+for _ in range(amount_bidders):
+    name = input()
+    bid = int(input())
+    if bid > max:
+        max = bid
         winner = name
 
-
 print(winner)
-    
-
-    
