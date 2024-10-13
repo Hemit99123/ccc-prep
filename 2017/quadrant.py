@@ -9,7 +9,7 @@ x_coor = int(input("Enter the x coordinate:"))
 y_coor = int(input("Enter the y coordinate:"))
 
 
-# They are going in the order of the quadrants for better readablity 
+# ELIFS are going in the order of the quadrants for better readablity 
 # Order in this case does not matter as the conditions do not depened on each other
 
 # Using < and > to determine if integer is negative or positive. If postive it must be above 0 
