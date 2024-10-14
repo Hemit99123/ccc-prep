@@ -28,17 +28,23 @@ for i in vote_seq:
         b_count +=1
 
 
-# Now see the results
+# Now output results...
 
-if (a_count == b_count):
-    print("Tie")
 
-elif (a_count > b_count):
-    print("A")
 
 # A count is less than b count meaning b count is higher
 # Did it this way instead of b_count > a_count to be consistent
 # With my elif statements for better readability
 
-elif (a_count < b_count):
+if (a_count < b_count):
     print("B")
+
+# Tie as both counts are ==
+
+elif (a_count == b_count):
+    print("Tie")
+
+# A count is more in this case because > == greater than
+
+elif (a_count > b_count):
+    print("A")
