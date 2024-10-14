@@ -61,6 +61,10 @@ thirty_day_months = [2,4,6,9,11]
 # (can't have a 13th month) or (can't have a 32nd day)
 
 if (1 <= month <= 12) and (1<= day <= 31):
+
+    # First checking the months because if months are above or below feb
+    # It means the day doesn't matter as it is a smaller unit of time
+
     if (month > 2):
         print("After")
         
@@ -68,12 +72,21 @@ if (1 <= month <= 12) and (1<= day <= 31):
         print("Before")
         
     else:
+
+        # In this else statement, we assum that the month == 2 because
+        # the other if blocks werent true
+
+        # Now day does matter because months are the same
+
         if (day > 18):
             print("After")
         
         elif (day < 18):
             print("Before")
-            
+
+        # If days are not greater or lesser than it means both the month and day
+        # are equal to eachother
+    
         else:
             print("Special")
 
