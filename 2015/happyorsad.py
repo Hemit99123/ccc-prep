@@ -7,7 +7,8 @@
 
 text = input("Enter the text")
 
-# Counting the instances of the emoticons using python builtin .count() functions
+# Counting the instances of the emoticons using python builtin .count() functions 
+# .count counts a speific character sum in a string (PYTHON SPECIFIC)
 
 happy = text.count(":-)")
 sad = text.count(":-(")
