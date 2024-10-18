@@ -17,7 +17,7 @@ points_gained = packages * 50
 # Now we figure out how much points we must lose because of collisons
 # We keep it a postive because in the equation we will model it a negative
 
-points_lost = collisons * 10
+points_lost = collision * 10
 
 # Subtract the amount of points that need to be lost from our total sum to get accurate score
 
@@ -25,7 +25,7 @@ final_score = points_gained - points_lost
 
 # Now employing conditonal logic to ensure bonus 500 points are earned based on cretrion
 
-if packages > collisions:
+if packages > collision:
     final_score += 500
 
 print(final_score)
