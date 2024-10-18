@@ -26,6 +26,6 @@ final_score = points_gained - points_lost
 # Now employing conditonal logic to ensure bonus 500 points are earned based on cretrion
 
 if packages > collisions:
-    F += 500
+    final_score += 500
 
 print(final_score)
