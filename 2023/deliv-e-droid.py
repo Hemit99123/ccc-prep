@@ -7,25 +7,25 @@
 
 # The inputs for the program to work
 
-P = int(input(""));
-C = int(input(""));
-F = 0;
+packages = int(input(""));
+collision = int(input(""));
 
 # Providing 50 points per package delivered which is expressed in P
 
-F = P * 50
+points_gained = packages * 50
 
 # Now we figure out how much points we must lose because of collisons
+# We keep it a postive because in the equation we will model it a negative
 
-points_lost = C * 10
+points_lost = collisons * 10
 
 # Subtract the amount of points that need to be lost from our total sum to get accurate score
 
-F = F - points_lost
+final_score = points_gained - points_lost
 
 # Now employing conditonal logic to ensure bonus 500 points are earned based on cretrion
 
-if P > C:
+if packages > collisions:
     F += 500
 
-print(F)
+print(final_score)
