@@ -15,6 +15,8 @@ digit_4 = int(input())
 # using that boolean value in the if statement with the and operator so that ALL conditions must
 # be met for this to work
 
+# LEARNED TO PUT THE DIFFERENT CONDITIONS WHEN USING BOOL OPERATORS IN DIFFERENT PARENTHESES WHEN THEY ALL RELY ON EACH OTHER TO BE TRUE 
+
 if (digit_1 == 8 or digit_1 == 9) and (digit_4 == 8 or digit_4 == 9) and (digit_2 == digit_3):
     print("ignore")
 else:
