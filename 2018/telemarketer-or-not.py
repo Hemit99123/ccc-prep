@@ -4,6 +4,8 @@
 # MR VEERA
 # Telemarketer or not? J1 2018
 
+# Each digit is given its own set of input
+
 digit_1 = int(input())
 digit_2 = int(input())
 digit_3 = int(input())
