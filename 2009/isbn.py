@@ -24,6 +24,7 @@ total = 0
 
 
 # int cannot be iterable so we must change them back to a string which is iterable
+# we go through each digit one by one through for loop so we can multiply each digit by tag
 
 for digit in str(final_digits):
     # Check which tag we are using and use that for multiplication
