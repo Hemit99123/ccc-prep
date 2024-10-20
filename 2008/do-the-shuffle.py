@@ -14,8 +14,8 @@ songs = ["A", "B", "C", "D", "E"]
 # running this logic repeately until btn 4 is pressed
 while True:
 
-    button = int(input(""))
-    amount_pressed = int(input(" "))
+    button = int(input("Enter the button pressed:"))
+    amount_pressed = int(input("How many times is this button pressed:"))
 
     if button == 1:
         # Shift the first song to the end
