@@ -40,12 +40,7 @@ while True:
             # then the remaning songs are added aferwards the swap is made
             songs = [songs[1]] + [songs[0]] + songs[2:]
     elif button == 4:
-        songs_output = ""
-        # these songs are in a list so we are putting them into a string for the proper output by iterating over them
-        for song in songs:
-            # here is where we add to the string itself
-            songs_output += song + " "
-        # now print the final songs output before breaking out of the loop to end this computer program (application)
+        songs_output = " ".join(songs)
         print(songs_output)
         break;
     ## BONUS ADDED ERROR HANDLING IF USER INPUTS A NON PERMITTED VALUE
