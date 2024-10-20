@@ -68,7 +68,7 @@ if (1+1 == number):
 
 print(total_ways)
 
-# ADVANCED BETTER SOLUTION (LEARN BETTER)
+# ADVANCED BETTER SOLUTION (LEARN BETTER TMR USES LOOPS -> GOTTA EXPLAIN THAT TOO IF U WANNA USE IT ON THE TEST)
 
 number = int(input("Enter the amount Natalie has to show:"))
 total_ways = 0
