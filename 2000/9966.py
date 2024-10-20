@@ -29,7 +29,7 @@ for number in range(low, high + 1):
         else:
           # MAKING ALGORITHM MORE EFFIENCT BY USING BREAK STATEMENT
             is_rotatable = False  # If digit can't be rotated, mark the number as invalid
-            break  # Stop further checking for this number as it's not rotatable because it doesn't have a rotatable nuber
+            break  # Stop further checking for this number as it's not rotatable because it doesn't have a rotatable number meaning the whole number will not look the same
 
     # If the number is rotatable and matches the original number after rotation
     if rotated == number_str:
