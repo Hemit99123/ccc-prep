@@ -48,3 +48,6 @@ while True:
         # now print the final songs output before breaking out of the loop to end this computer program (application)
         print(songs_output)
         break;
+    ## BONUS ADDED ERROR HANDLING IF USER INPUTS A NON PERMITTED VALUE
+    else:
+        print("Unrecognized number, please input a better one")
