@@ -28,7 +28,10 @@ while True:
             # opposite logic here
             # we are taking all values from first onwards
             # we then shift the last song to the first place by adding it first and then the rest of the list
-            songs = [songs[4]] + songs[0:]
+            # for songs[0:4] we need to spiecify the limit as 4 so it doesn't include 4 as the upper-limit is non-inclusive
+            # so it is from 0 to 3 which is what we want as the idx 4 is being put forward of the other songs
+
+            songs = [songs[4]] + songs[0:4]
     
     elif button == 3:
         for _ in range(amount_pressed):
