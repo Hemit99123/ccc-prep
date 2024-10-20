@@ -14,7 +14,7 @@ songs = ["A", "B", "C", "D", "E"]
 # running this logic repeately until btn 4 is pressed
 while True:
 
-    button = int(input("Enter the button:"))
+    button = int(input("Enter the button: (1-4)"))
     amount_pressed = int(input("How many times is this button pressed:"))
 
     if button == 1:
