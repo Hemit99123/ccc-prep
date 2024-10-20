@@ -7,7 +7,7 @@
 
 word = input()
 
-# made a list of all allowed values which can be rotated
+# made a list of all allowed values which can be rotated (a collection of items == a list)
 allowed = ["I", "O", "S", "H", "Z", "X", "N"]
 
 # default output will be yes unless a letter from the word is not in allowed
