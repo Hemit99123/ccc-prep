@@ -26,3 +26,15 @@ for letter in word:
 
 # here we print the output whether that is yes or no
 print(output)
+
+
+# ALTERNATIVE WAY 
+
+s = input()
+output = "YES"
+
+for i in s:
+    if i != "I" and i != "O" and i != "S" and i != "H" and i != "Z" and i != "X" and i != "N":
+        output = "NO"
+
+print(output)
