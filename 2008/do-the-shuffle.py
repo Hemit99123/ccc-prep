@@ -40,6 +40,8 @@ while True:
             # then the remaning songs are added aferwards the swap is made
             songs = [songs[1]] + [songs[0]] + songs[2:]
     elif button == 4:
+        # this will join all the elements in the list songs with a space seperating them 
+        # exactly how ccc wants it!!
         songs_output = " ".join(songs)
         print(songs_output)
         break;
