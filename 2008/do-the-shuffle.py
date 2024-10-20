@@ -3,6 +3,7 @@
 # MR VEERA 
 # 781159
 # 20 oct 2024 
+# ccc 2008 j2
 
 # we initalize the default values for song before the true loop because inside the loop it would be reset each time a new sequence is ran
 # meaning the shifted songs would not remain the same but be replaced with the default songs value again
