@@ -42,6 +42,7 @@ while True:
     elif button == 4:
         # this will join all the elements in the list songs with a space seperating them 
         # exactly how ccc wants it!!
+        # this is like iterating over the songs and adding it to a string but with less lines of code so much more elegant
         songs_output = " ".join(songs)
         print(songs_output)
         break;
