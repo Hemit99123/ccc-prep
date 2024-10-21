@@ -9,7 +9,8 @@ import sys
 
 # This is just like the input() function but much more faster 
 number = sys.stdin.readline("Enter the amount Natalie has to show:")
-
+number = int(input("")
+             
 total_ways = 0
 
 # Checking if number on one hand is possible
