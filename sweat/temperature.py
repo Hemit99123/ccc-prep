@@ -6,6 +6,10 @@
 # 21 oct 2024
 
 weather = int(input("Enter the temperature in Celsius"))
+
+# the categories will be assigned to a variable because they will all be printed with the same prompt
+# so by just assigning the one piece of data that changes, we save so many loc
+
 category = ""
 
 # it was worded 0 AND below meaning that 0 is also included in this category
@@ -29,5 +33,8 @@ elif (25 < weather <= 35):
 
 else:
     category = "Hot"
+
+# we just print the category with the prompt that remains the same regardless 
+# we do this in f"" which embeds variables in {}
 
 print(f"You are in the {category} category.")
