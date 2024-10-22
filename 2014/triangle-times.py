@@ -5,9 +5,9 @@
 # Triangle Times
 # 14 oct 2024
 
-angle_1 = int(input("Enter the first angle:"))
-angle_2 = int(input("Enter the second angle:"))
-angle_3 = int(input("Enter the thrid angle:"))
+angle_1 = int(input(""))
+angle_2 = int(input(""))
+angle_3 = int(input(""))
 
 
 # Some variables needed for the conditonal statement 
