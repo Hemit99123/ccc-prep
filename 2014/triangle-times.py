@@ -44,8 +44,3 @@ elif (one_two_eq or one_three_eq or two_three_eq):
 
 else:
     print("Scalene")
-
-# If none of these combinations work, it is an error so print that out
-
-else:
-    print("Error")
