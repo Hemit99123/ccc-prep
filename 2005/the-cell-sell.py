@@ -43,6 +43,7 @@ total_b_cost = plan_b_daytime + plan_b_evening + plan_b_weekend
 
 # f string is like .format() function but lets you embed variables using {} instead of in a paramater
 # rounding functions are ran with :.NUMBERf 
+# we round because inputs are all in 2 decimal places
 
 print(f"Plan A costs {total_a_cost:.2f}")
 print(f"Plan B costs {total_b_cost:.2f}")
