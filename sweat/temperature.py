@@ -18,7 +18,7 @@ if (weather <= 0):
 
 # since 0 is included in the other category, we cannot include it in this range
 # 15 is included because it says up "to"
-# this same logic applies for all other ranges
+# this same logic applies for all other ranges as the wording remains the same
 
 elif (0 < weather <= 15):
     category = "Cold"
