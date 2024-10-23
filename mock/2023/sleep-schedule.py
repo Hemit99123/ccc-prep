@@ -14,6 +14,8 @@ if (waketime_hour < bedtime_hour):
     
     difference = (waketime_hour + 24) - bedtime_hour
 
+# Now we check for 3 different conditions. each of these conditions must be true to output healthy hence the boolean operaters of and
+
 if (20 <= bedtime_hour <= 23) and (6 <= waketime_hour <= 9) and (8 <= difference <= 10):
     print("Healthy")
 else:
