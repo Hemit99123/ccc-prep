@@ -14,11 +14,11 @@ sea_level = 0
 
 
 # Changing the sea level based on different conditions (employing conditional logic)
-if pressure < 100:
+if (pressure < 100):
     sea_level = 1
-elif pressure == 100:
+elif (pressure == 100):
     sea_level = 0
-elif pressure > 100:
+elif (pressure > 100):
     sea_level = -1
 
 
