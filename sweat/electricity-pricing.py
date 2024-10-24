@@ -5,6 +5,24 @@
 # 23 oct 2024
 # electricity bill calculator
 
+'''
+
+Base Charge:
+
+Every customer is charged a base service fee of $50 per month.
+Electricity Usage (in kWh):
+
+For the first 100 kWh of electricity, the cost is $0.30 per kWh.
+For the next 200 kWh (i.e., between 101 and 300 kWh), the cost is $0.50 per kWh.
+For anything beyond 300 kWh, the cost is $0.75 per kWh.
+Peak Usage Charge:
+
+If the usage exceeds 500 kWh, an additional "peak usage" charge of $100 is applied.
+Discount for Low Users:
+
+If the total usage is under 50 kWh, the customer gets a 10% discount on their total bill.
+
+'''
 kwh_used = int(input())
 cost = 50
 
