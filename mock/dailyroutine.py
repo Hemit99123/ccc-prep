@@ -21,6 +21,8 @@ bus_arrives_minutes = 8 * 60
 if (total_minutes <= bus_arrives_minutes):
     print("KURBYDOO MAKES THE BUS")
 
+# subtract 30 mins because kurbydoo will skip breakfast which takes 30 mins
+
 elif (total_minutes - 30 <= bus_arrives_minutes):
     print("KURBYDOO SKIPS BREAKFAST")
 
