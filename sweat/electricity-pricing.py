@@ -26,10 +26,8 @@ If the total usage is under 50 kWh, the customer gets a 10% discount on their to
 kwh_used = int(input())
 cost = 50
 
-cost += 100 * 0.3
-
 if (kwh_used <= 100):
-    cost += 100 * 0.3
+    cost += kwh_used * 0.3
 elif (101 <= kwh_used <= 300):
     cost += (100*0.3) + (kwh_used - 100) * 0.5
 else:
@@ -40,3 +38,5 @@ if (kwh_used > 500):
 
 if (kwh_used < 50):
     cost -= cost * 0.1
+
+print(cost)
