@@ -31,7 +31,7 @@ year = int(input("Enter the year:"))
 # makes the first condition true that means year is not divisable by 100
 # so the second condition would become false
 
-if (year % 4 == 0 and year % 100 != 0) or (year % 4 == 0 and year % 100 == 0 and year % 400 == 0):
+if (year % 4 == 0 and year % 100 != 0) or (year % 400 == 0):
     print("Leap Year")
 else:
     print("Not a Leap Year")
