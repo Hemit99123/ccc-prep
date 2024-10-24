@@ -42,7 +42,13 @@ else:
         
     cost = quantity * cost_per
 
+    # this is a standalone if statement because this condition\
+    # does not depend on any other condition
+    # this is on top of the other if clause as it used
+    # the keyword "additional"
+
     if (quantity >= 20):
+        # giving a discount of 10 percent ON TOP of current price
         cost = cost - (cost * 0.1)
 
     print("Total cost:", cost)
