@@ -35,9 +35,9 @@ else:
     
     if (quantity < 5):
         cost_per = 2
-    if (5 <= quantity <= 10):
+    elif (5 <= quantity <= 10):
         cost_per = 1.50
-    if (quantity > 10):
+    elif (quantity > 10):
         cost_per = 1
         
     cost = quantity * cost_per
