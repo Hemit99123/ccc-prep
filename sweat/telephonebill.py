@@ -16,7 +16,7 @@ else:
 if (calls <= 150):
     call_cost = 0
 
-# 150 calls were used from above statement
+# 150 calls were used from above statement so we have to account for it here
 
 elif (151 <= calls <= 400):
     call_cost = (calls-150) * 0.8
