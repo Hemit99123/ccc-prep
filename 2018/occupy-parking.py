@@ -8,6 +8,7 @@
 number_parking = int(input())
 
 # turn the inputs into a list of characters 
+# list() function does this for us. a list is a collection of items such as string values
 # this way we can check for each one by one in a for loop
 
 yesterday_parking = list(input())
