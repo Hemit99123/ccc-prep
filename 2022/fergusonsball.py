@@ -1,34 +1,23 @@
 # Hemit Patel
-# STUDENT NUMBER
-# ICS3U0-1 (Course code)
-# J2 2022 Solution
-# INSTRUCTOR NAME
-# 21 sep 2024
+# 781159
+# ICS3U0-4
+# MR VEERA
+# 29 oct 2024 
+# fergusonball rating 
 
-number_players = int(input(""));
-amount = 0;
+players = int(input())
 
-# Run the same program each time for each player so that we can see each players rating
+star_players = 0
 
-for _ in range(number_players):
+for _ in range(players):
+    points = int(input())
+    fouls = int(input())
 
-    # This is the 2 inputs which will collect the player data
-    points = int(input(""));
-    fouls = int(input(""));
+    scores = (points * 5) - (fouls * 3)
+    if (scores > 40):
+        star_players += 1
 
-    # The processing based on the constraints given to see if a rating is above 40 stars
-    star_rating = (points * 5) - (fouls * 3);
-
-    # If it is, increment one to the amount variable which will serve as an output
-    if star_rating > 40:
-        amount += 1;
-'''
-Here we are checking if a team is a "gold" team by seeing if the amount of players
-above 40 ratings is the same as the ACTUAL amount of players on said team
-'''
-
-if amount == number_players:
-    print(str(A) + "+");
+if (star_players == players):
+    print(str(star_players) + "+")
 else:
-    print(str(A));
-    
+    print(str(star_players))
