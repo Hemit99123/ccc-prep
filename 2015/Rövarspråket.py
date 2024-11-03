@@ -25,6 +25,9 @@ for char in word:
     
     if (char in consonant):
         # finding the index in the consonant
+        # .index() is a method on the list which finds the first instance of a string in it's argument (char) and 
+        # retrieves the numerical index pos for it
+        
         idx = consonant.index(char)
         
         # now we use that same idx for the other lists which will find the corresponding information based on the consonant 
