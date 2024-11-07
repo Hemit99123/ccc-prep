@@ -8,7 +8,9 @@ amount_rolls = int(input())
 antonia_score = 100
 david_score = 100
 
-for _ in range(amount_rolls):
+counter = 0
+
+while (counter <= amount_rolls):
     rolls = input()
     rolls_list = rolls.split()
     rolls_antonia = int(rolls_list[0])
@@ -20,7 +22,8 @@ for _ in range(amount_rolls):
     elif (rolls_antonia > rolls_david):
         david_score -= rolls_antonia
 
-
+    counter += 1
+    
 print(antonia_score)
 print(david_score)
         
