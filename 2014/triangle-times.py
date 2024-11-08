@@ -13,7 +13,7 @@ angle_3 = int(input(""))
 # Some variables needed for the conditonal statement 
 # This will make it easier for devs to read my program
 # Also helps reduce reduncny in my program which means
-# It is following the DRY principle
+# It is following the DRY principle (do not repeat yourself)
 
 sum_angles = angle_1 + angle_2 + angle_3
 
