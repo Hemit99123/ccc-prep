@@ -10,21 +10,22 @@ amount_cols = int(input())
 
 rows = []
 
+for _ in range(amount_rows):
+    new_row = input()
+    rows.append(new_row)
+
 start_rows = int(input())
-start_cols = int(input)
+start_cols = int(input())
 
 target_rows = rows[:start_rows]
 
 total = 0
 
-for _ in range(amount_rows):
-    new_row = input()
-    rows.append(new_row)
 
 for row in target_rows:
     for item in row:
 
-      if (not row.index(item) == start_cols):
+      if (not row.index(item) <= start_cols):
           continue
       elif (item == "S"):
           total += 1
@@ -34,3 +35,5 @@ for row in target_rows:
           total += 10
       else:
         break
+
+print(total)
