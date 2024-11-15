@@ -20,8 +20,8 @@ sorted_list = sorted(set(list_scores), reverse=True)
 bronze_winners = 0
 bronze_score = sorted_list[2]
 
-for i in list_scores: 
-  if i == bronze_score: 
+for score in list_scores: 
+  if score == bronze_score: 
     bronze_winners += 1 
 
 print(bronze_score, bronze_winners)
