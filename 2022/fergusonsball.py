@@ -18,7 +18,7 @@ for _ in range(players):
         star_players += 1
 
 if (star_players == players):
-    print(str(star_players) + "+")
+    print(f"{star_players}+")
 else:
-    print(str(star_players))
+    print(star_players)
         
