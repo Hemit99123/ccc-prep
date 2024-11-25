@@ -13,14 +13,14 @@ tuning_instruction = list(tuning_instruction)
 current_instruction = ""
 
 # Loop through each character in the tuning instruction
-for i in range(len(tuning_instruction)):
-    if tuning_instruction[i] == "+":
+for idx in range(len(tuning_instruction)):
+    if tuning_instruction[idx] == "+":
         current_instruction += " tighten "
-    elif tuning_instruction[i] == "-":
+    elif tuning_instruction[idx] == "-":
         current_instruction += " loosen "
-    elif tuning_instruction[i] in "0123456789":
+    elif tuning_instruction[idx] in "0123456789":
        current_instruction += tuning_instruction[i]
-       if i + 1 == len(tuning_instruction) or tuning_instruction[i+1].isalpha():
+       if i + 1 == len(tuning_instruction) or tuning_instruction[idx+1] in "ABCDEFGHIJKLMNOPQRSTUVWXYZ":
             print(current_instruction)
             current_instruction = ""
     else:
