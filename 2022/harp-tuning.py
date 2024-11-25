@@ -18,7 +18,7 @@ for i in range(len(tuning_instruction)):
         current_instruction += " tighten "
     elif tuning_instruction[i] == "-":
         current_instruction += " loosen "
-    elif tuning_instruction[i].isnumeric():
+    elif tuning_instruction[i] in "0123456789":
        current_instruction += tuning_instruction[i]
        if i + 1 == len(tuning_instruction) or tuning_instruction[i+1].isalpha():
             print(current_instruction)
