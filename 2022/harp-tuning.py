@@ -3,7 +3,7 @@
 # ICS3UO-1
 # Harp Tuning Convertor
 # INSTRUCTOR NAME
-# 26 sep 2024
+# 25 nov 2024
 
 tuning_instruction = input("")
 
