@@ -13,13 +13,13 @@ while True:
     is_distinct = True
     
     # Compare each digit with every other digit after it
-    for idx in range(len(year_str)):
-        for next_idx in range(idx + 1, len(year_str)):  # Fixed range here
-            if year_str[idx] == year_str[next_idx]:
+    for (idx in range(len(year_str))):
+        for (next_idx in range(idx + 1, len(year_str))):  # Fixed range here
+            if (year_str[idx] == year_str[next_idx]):
                 is_distinct = False
                 break
                 
-    if is_distinct:
+    if (is_distinct == True):
         print(year)
         break
         
