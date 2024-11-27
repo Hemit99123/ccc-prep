@@ -3,12 +3,9 @@
 # ICS3UO-1
 # Harp Tuning Convertor
 # INSTRUCTOR NAME
-# 25 nov 2024
+# 26 sep 2024
 
 tuning_instruction = input("")
-
-# Convert the tuning instruction into a list of characters
-tuning_instruction = list(tuning_instruction)
 
 current_instruction = ""
 
@@ -19,9 +16,9 @@ for idx in range(len(tuning_instruction)):
     elif tuning_instruction[idx] == "-":
         current_instruction += " loosen "
     elif tuning_instruction[idx] in "0123456789":
-       current_instruction += tuning_instruction[i]
-       if i + 1 == len(tuning_instruction) or tuning_instruction[idx+1] in "ABCDEFGHIJKLMNOPQRSTUVWXYZ":
+       current_instruction += tuning_instruction[idx]
+       if idx + 1 == len(tuning_instruction) or tuning_instruction[idx+1] in "ABCDEFGHIJKLMNOPQRSTUVWXYZ":
             print(current_instruction)
             current_instruction = ""
     else:
-        current_instruction += tuning_instruction[i]
+        current_instruction += tuning_instruction[idx]
