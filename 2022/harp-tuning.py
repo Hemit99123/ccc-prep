@@ -24,6 +24,6 @@ for idx in range(len(tuning_instruction)):
     else:
         current_instruction += character
 
-    if (idx + 1 == len(tuning_instruction) or next_character in "ABCDEFGHIJKLMNOPQRSTUVWXYZ") and (character in "0123456789"):
+    if (character in "0123456789" and next_character in "ABCDEFGHIJKLMNOPQRSTUVWXYZ") or (idx + 1 == len(tuning_instruction)):
         print(current_instruction)
         current_instruction = ""
