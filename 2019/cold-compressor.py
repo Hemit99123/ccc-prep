@@ -6,7 +6,6 @@
 # 29 sep 2024 
 
 number_lines = int(input("")) 
-list_score = []
 
 for _ in range(number_lines): 
     decoded = input(" ")  # Get the input string
