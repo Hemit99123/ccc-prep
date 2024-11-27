@@ -7,6 +7,10 @@
 
 number_lines = int(input("")) 
 
+# _ is used in the place of the counter variable
+# because we do not need the counter variable that the for loop has
+# We simply need it to repeat the number of times specified by number_lines (int)
+
 for _ in range(number_lines): 
     decoded = input(" ")  # Get the input string
     count = 1  # Start count at 1 for the first character
