@@ -16,9 +16,9 @@ while True:
     
 # Process directions in reverse
 # For each turn, we need to output the opposite direction and the previous street
-for i in range(len(directions) - 1, 0, -2):
-    turn = directions[i-1]
-    street = directions[i-2] if i > 1 else 'HOME'
+for index_pos in range(len(directions) - 1, 0, -2):
+    turn = directions[index_pos-1]
+    street = directions[index_pos-2] if index_pos > 1 else 'HOME'
         
     # Convert R to LEFT and L to RIGHT for the reverse journey:
     if turn == 'R':
