@@ -5,11 +5,10 @@
 # 30 oct 2024
 # are we there yet
 
-
-# LEARN WHY THIS WORK (YOU GOT THE LOGIC JUST NOT HOW TO CODE IT SO LEARN!!!)
-
 distances = map(int, input().split())
 positions = [0]
+
+
 for i in distances: 
     positions.append(positions[-1] + i)
 
@@ -22,4 +21,6 @@ for i in range(5):
             distances *= -1
             
         print(f"{distances} ", end="")
+
+    # print an empty line to create a one space gap
     print()
