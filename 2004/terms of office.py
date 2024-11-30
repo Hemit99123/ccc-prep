@@ -11,8 +11,8 @@
 start = int(input())
 end = int(input())
 
-common_quotient = start % 60
+common_remainder = start % 60
 
 for year in range(start,end+1):
-    if (year % 60 == common_quotient):
+    if (year % 60 == common_remainder):
         print(f"All positions change in year {year}")
