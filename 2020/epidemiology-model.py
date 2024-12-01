@@ -42,7 +42,4 @@ while (total_infected > people_infected_day0):
     # Changing the prev day to this day as this execution of the loop as now stopped
     prev_day_infected = people_infected_on_day
 
-    
-
-
 print(days)
