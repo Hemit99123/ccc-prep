@@ -11,17 +11,11 @@ vowels = ["a", "e", "i", "o", "u", "y"]
 # to do this we use an infinte loop
 
 while True:
-  user_input = input()
+  word = input()
 
-  if (user_input == "quit!"):
+  if (word == "quit!"):
     break;
   
-  # tokenizing the input so that we can look at each letter one by one 
-  # tokenization means breaking each letter of a string into something known as a token (character/letter)
-  
-  word = list(user_input)
-  
-  output = ""
   
   # checking if the word is american
   # we first look at the length of the word list which must be 4 tokens long
@@ -35,11 +29,7 @@ while True:
     # to the new suffix which in an another list of ["o", "u", "r"]
     # this will add both of them up, connecting them to one another 
     
-    new_word = word[:-2] + ["o", "u", "r"]
-    output = "".join(new_word)
+    word = word[:-2] + "our"
 
-  # if this conditions were not meet, it means the word is not american spelling so no need to convert it
-  else:
-    output = "".join(word)
+  print(word)
 
-  print(output)
