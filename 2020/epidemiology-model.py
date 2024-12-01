@@ -6,15 +6,15 @@
 # 2 dec 2024
 
 
-# Input
 target_infections = int(input())  # Target total number of people infected
 initial_infections = int(input())  # People infected on Day 0
 infection_rate = int(input())  # Number of people each infected person infects
 
-# Initialize variables
 total_infected = initial_infections  # Total number of people infected so far
 current_day_infections = initial_infections  # Infections on the current day
-day = 0  # Start counting from Day 0
+day = 0  # Start counting from Day 0 (as sample inputs start with 0 NOT 1)
+
+
 
 # We use a while loop because we have a condition for when the loop ends, meaning we do not know EXACTLY 
 # how many iterations there will be, just when it will break
