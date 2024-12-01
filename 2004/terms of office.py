@@ -5,9 +5,6 @@
 # 29 nov 2024
 # ccc j2 2004
 
-
-# USES MATH CONCEPTS LIKE LCM 
-
 start = int(input())
 end = int(input())
 

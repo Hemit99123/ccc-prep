@@ -22,11 +22,13 @@ prev_day_infected = people_infected_day0
 # The total amount infected as the days go on
 total_infected = people_infected_day0
 
-while True:
+# Stop the loop if the total infected has surpassed the people infected target as we have found the amount of days already
+# We use a while loop because we have a condition for when the loop ends, meaning we do not know EXACTLY 
+# how many iterations there will be, just when it will break
+# We need to repeatly keep calculating the computation because each day requires computation 
+# which means we have to repeat for EACH AND EVERY DAY
 
-    # Stop the loop if the total infected has surpassed the people infected target as we have found the amount of days already
-    if total_infected > people_infected_target:
-        break;
+while (total_infected > people_infected_day0):
 
     # Calculating how many people were infected on a speific day through a pattern which includes the previous days infected amount * infected rate
     people_infected_on_day = prev_day_infected * people_infected_rate
