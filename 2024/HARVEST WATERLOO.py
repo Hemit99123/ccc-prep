@@ -5,7 +5,7 @@
 # 781159
 # harvest waterloo
 
-## STILL IN PROgress!! ##
+## STILL IN PROGRESS!! ##
 
 amount_rows = int(input())
 amount_cols = int(input())
