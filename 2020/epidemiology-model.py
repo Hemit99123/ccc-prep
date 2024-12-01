@@ -25,7 +25,7 @@ day = 0  # Start counting from Day 0 (as sample inputs start with 0 NOT 1)
 # The loop will only continue if the total infected has NOT surpassed the people infected target as 
 # if that were the case, we have found the amount of days already (the end condition)
 
-while total_infected <= target_infections:
+while (total_infected <= target_infections):
 
     # Increment one day as a day has just passed by with each iteration
 
