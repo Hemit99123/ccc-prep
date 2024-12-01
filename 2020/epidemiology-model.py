@@ -1,9 +1,9 @@
 # Hemit Patel
 # STUDENT NUMBER
-# ICS3U0-1
+# ICS3U0-4
 # J2 2020 Waterloo Solution
-# INSTRUCTOR NAME
-# 24 sep 2024
+# Mr Veera
+# 2 dec 2024
 
 
 # All the inputs required by the program
