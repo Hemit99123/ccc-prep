@@ -8,6 +8,10 @@
 # Read directions until we encounter 'SCHOOL'
 directions = []
 
+# Adding all directions into a ds called a list
+# A list stores all items within an collection 
+# and we can retrieve each one of these items
+
 while True:
     instruction = input().strip()
     directions.append(instruction)
