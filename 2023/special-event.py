@@ -5,36 +5,39 @@
 # TEACHER NAME
 # 21 sep 2024
 
-"""
-Key learnings:
+# Number of days (input)
+num_days = int(input())
 
-2 python operators that can help with problem solving.
+# Dictionary to store the count of "Y" for each day
+day_counts = {}
 
-max() attribute which finds the maximum element in a given range of values (list) 
+# Output string to store the days with the maximum "Y" count
+result = ""
 
-rstrip() which is used for formatting of text (string) values in python. part of the strip() functions which remove different parts of the text. rstrip removes the right most attributes (the end)
-"""
+# Loop through the input for each day
+for _ in range(num_days):
+    attendance = input()  # List of "Y" or "N" indicating attendance for the day
+    attendance = list(attendance)  # Convert the string to a list of characters
 
-def Solution():
-    n = int(input())
-    h = {}
-    output = ""
+    # Loop through each day's attendance
+    for day_index in range(len(attendance)):
+        # Calculate the day number (starting from 1)
+        day_number = day_index + 1
 
-    for i in range(n):
-        a = input()
-        a = list(a)
-        for i in range(len(a)):
-            day_number = i + 1
-            if a[i] == "Y" and day_number in h:
-                h[day_number] += 1
-            elif a[i] == "Y" and day_number not in h:
-                h[day_number] = 1
+        # If the attendance is "Y", update the day count
+        if attendance[day_index] == "Y":
+            if day_number in day_counts:
+                day_counts[day_number] += 1  # Increment the count for the day
+            else:
+                day_counts[day_number] = 1  # Initialize the count for the day
 
-    max_value = max(h.values())
-    for key, value in h.items():
-        if value == max_value:
-            output = output + str(key) + ","
+# Find the maximum count of "Y" for any day
+max_attendance = max(day_counts.values())
 
-    return output.rstrip(',')
+# Loop through the dictionary to find the days with the maximum "Y" count
+for day, count in day_counts.items():
+    if count == max_attendance:
+        result = result + str(day) + ","  # Add the day to the result string
 
-print(Solution())
+# Remove the trailing comma and return the result
+print(result.rstrip(','))
