@@ -15,6 +15,10 @@ directions = []
 while True:
     instruction = input().strip()
     directions.append(instruction)
+    
+    # A sential of SCHOOL will end this infinite loop as an infinite loop cannot keep running forever
+    # Or else a TLE error would be presented
+    
     if instruction == 'SCHOOL':
         break
     
