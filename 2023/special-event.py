@@ -17,7 +17,6 @@ result = ""
 # Loop through the input for each day
 for _ in range(num_days):
     attendance = input()  # List of "Y" or "N" indicating attendance for the day
-    attendance = list(attendance)  # Convert the string to a list of characters
 
     # Loop through each day's attendance
     for day_index in range(len(attendance)):
