@@ -6,19 +6,17 @@
 
 
 humidity = int(input())
-max_hours_waited = int(input())
-hours = 1
-
-while True:
-    if (hours == max_hours_waited):
-        print("The balloon does not touch ground in the given time.")
+time = int(input())
+hit = False
+for i in range(1, time+1):
+    altitude = -6*i**4 + humidity*i**3 + 2*i**2 + i
+    if altitude <= 0:
+        hour = i
+        hit = True
         break
 
-    altitude = -6 * hours ** 4 + humidity * hours ** 3 + 2 * hours ** 2 + hours
-
-    if (altitude <= 0):
-        print("The balloon first touches ground at hour:")
-        print(hours)
-        break
-
-    hours += 1
+if hit:
+    print("The balloon first touches ground at hour:")
+    print(hour)
+else:
+    print("The balloon does not touch ground in the given time.")
