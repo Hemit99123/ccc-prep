@@ -17,7 +17,7 @@ b_count = 0
 # We use a for loop because we have a list meaning an iterable data strcuture
 # Each vote will be ONE singular character from the variable vote_seq
 
-for vote in vote_seq:
+for (vote in vote_seq):
 
     # Vote contains a character from vote_seq
 
