@@ -86,5 +86,7 @@ for idx in range(len(tuning_instruction)):
     if (is_end == True) or (tuning_instruction[idx+1] in alphabet and character in numbers):
 
         print(current_instruction)
+
+        # Erased the current_instruction variable by setting it to an empty
         current_instruction = ""
 
